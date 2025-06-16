@@ -1,26 +1,38 @@
-# Atalhos
+# 🎓 Curso Microsoft Project - Rubens do Carmo
+
+## 🖱️ Atalhos
 
 - `ALT + F + T` ~> Abrir menu de configurações
 - `ALT + SHIFT + 1` ~> Recolher toda seleção
+- `SHIFT + SPACE` ~> Selecionar linha
 
-# Campo Personalizados
+## 🛠️ Campos Personalizados
 
 - Quantidade de dias corridos
   ```
     DateDiff("d";[Início];[Término])
   ```
 
-# Macros
+## 🤖 Macros
 
-- Recolher tudo
+- Display Task's - Exibir / Recolher tarefas
   ```vba
     Sub RecolherTudo()
         OutlineShowAllTasks
         OutlineHideSubTasks
     End Sub
   ```
+- Time Scale - Configuração da Escala de tempo
+  ```vba
+    Sub TimeScale()
+      TimescaleEdit MajorUnits:=4, MinorUnits:=4, MajorLabel:=19,
+      MinorLabel:=21, MajorAlign:=1, MinorAlign:=1, MajorCount:=1,
+      MinorCount:=1, MinorTicks:=True, Enlarge:=120, Separator:=True,
+      TopUnits:=2, TopLabel:=7, TopAlign:=0, TopCount:=1, TierCount:=3
+    End Sub
+  ```
 
-# Cronograma
+## 📅 Cronograma do curso
 
 | AULA | SEÇÃO | CONTEÚDO                                      | OBSERVAÇÕES                                  |
 | ---- | ----- | --------------------------------------------- | -------------------------------------------- |
@@ -30,15 +42,18 @@
 | 09   | 02    | Identificar Entregas(WBS), Listar Atividades. | Formulação da Estrutura analítica do projeto |
 | 12   | 03    | Configuração de caledário padrão              | Arquivo ~> Opções ~> Cronograma              |
 | 13   | 03    | Tipos de Relacionamentos                      |                                              |
-| 16   | 03    | Restrição x Data limite                       | Task ~> Avançado                             |
+| 16   | 03    | Restrição x Data limite                       | inTask ~> Avançado                             |
+| 18   | 03    | Tarefas Periódicas                            | Tarefa ~> Tarefa ~> Periódica                |
 
-## Notes
+### 📋 Notes
 
 - SEÇÃO 2,AULA 03 - Project ~> Alterar Periodo de trabalho
 - SEÇÃO 2,AULA 06 - Configuração da Escala de Tempo
 - SEÇÃO 3,AULA 04 - Tipos de Relacionamentos
   - TI - TÉRMINO A INÍCIO / II - INÍCIO A INÍCIO
   - TT - TÉRMINO A TÉRMINO / IT - INÍCIO A TÉRMINO (Encerra após inicio da sucessora )
+
+## 🎉 Extras
 
 ```markdown
 **Projeto Vídeo Institucional V1.0**
