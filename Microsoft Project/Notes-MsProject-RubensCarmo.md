@@ -1,31 +1,46 @@
-- Atalhos
-  - `ALT + F + T` ~> Abrir menu de configurações
-  - `ALT + SHIFT + 1` ~> Recolher toda seleção
+# Atalhos
 
-- Macros
-  - Recolher tudo
-    ```vba
+- `ALT + F + T` ~> Abrir menu de configurações
+- `ALT + SHIFT + 1` ~> Recolher toda seleção
+
+# Campo Personalizados
+
+- Quantidade de dias corridos
+  ```
+    DateDiff("d";[Início];[Término])
+  ```
+
+# Macros
+
+- Recolher tudo
+  ```vba
     Sub RecolherTudo()
-        OutlineShowAllTasks 
+        OutlineShowAllTasks
         OutlineHideSubTasks
     End Sub
-    ```
+  ```
 
-| AULA | SEÇÃO | CONTEÚDO                                      | OBSERVAÇÕES                                     |
-| ---- | ----- | --------------------------------------------- | ----------------------------------------------- |
-| 01   | 01    | Configurações do projeto, coluna, grade.      |                                                 |
-| 02   | 02    | Configurações Calendário.                     | Recesso(folga), Feriados, meio expediente.      |
-| 03   | 03    | Identificar Entregas(WBS), Listar Atividades. | Importação de Cronograma, Anexo de Observações. |
-| 04   |       |                                               |                                                 |
-| 05   |       |                                               |                                                 |
+# Cronograma
 
-Notes
+| AULA | SEÇÃO | CONTEÚDO                                      | OBSERVAÇÕES                                  |
+| ---- | ----- | --------------------------------------------- | -------------------------------------------- |
+| 05   | 01    | Configurações do projeto.                     |                                              |
+| 06   | 02    | Configurações Escala de tempo, coluna, grade. |                                              |
+| 08   | 02    | Configurações Calendário.                     | Recesso(folga), Feriados, meio expediente.   |
+| 09   | 02    | Identificar Entregas(WBS), Listar Atividades. | Formulação da Estrutura analítica do projeto |
+| 12   | 03    | Configuração de caledário padrão              | Arquivo ~> Opções ~> Cronograma              |
+| 13   | 03    | Tipos de Relacionamentos                      |                                              |
+| 16   | 03    | Restrição x Data limite                       | Task ~> Avançado                             |
+
+## Notes
 
 - SEÇÃO 2,AULA 03 - Project ~> Alterar Periodo de trabalho
+- SEÇÃO 2,AULA 06 - Configuração da Escala de Tempo
 - SEÇÃO 3,AULA 04 - Tipos de Relacionamentos
   - TI - TÉRMINO A INÍCIO / II - INÍCIO A INÍCIO
   - TT - TÉRMINO A TÉRMINO / IT - INÍCIO A TÉRMINO (Encerra após inicio da sucessora )
 
+```markdown
 **Projeto Vídeo Institucional V1.0**
 
 - **Etapa 1 - Criação**
@@ -66,3 +81,4 @@ Notes
   - Inserir Efeitos Especiais: 5d
   - Realizar Tratamento e Correções: 2d
   - Renderizar: 4h
+```
