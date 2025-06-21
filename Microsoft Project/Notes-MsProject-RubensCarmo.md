@@ -45,24 +45,30 @@
     End Sub
   ```
 
-## 📅 Cronograma do curso
+## 📅 Sumário do curso
 
-| AULA | SEÇÃO | CONTEÚDO                                      | OBSERVAÇÕES                                       |
-| ---- | ----- | --------------------------------------------- | ------------------------------------------------- |
-| 05   | 01    | Configurações do projeto.                     |                                                   |
-| 06   | 02    | Configurações Escala de tempo, coluna, grade. |                                                   |
-| 08   | 02    | Configurações Calendário.                     | Recesso(folga), Feriados, meio expediente.        |
-| 09   | 02    | Identificar Entregas(WBS), Listar Atividades. | Formulação da Estrutura analítica do projeto      |
-| 12   | 03    | Configuração de caledário padrão              | Arquivo ~> Opções ~> Cronograma                   |
-| 13   | 03    | Tipos de Relacionamentos                      |                                                   |
-| 16   | 03    | Restrição x Data limite                       | inTask ~> Avançado                                |
-| 18   | 03    | Tarefas Periódicas                            | Tarefa ~> Tarefa ~> Periódica                     |
-| 23   | 04    | Formula de trabalho                           |                                                   |
-| 24   | 04    | Tipos de Tarefas                              | Duração fixa x trabalho fixo x unidades fixas     |
-| 25   | 04    | Adição de recursos nas tarefas                | Tarefa ~> Display ~> Uso da Tarefa                |
-| 27   | 04    | Contorno de Trabalho                          | Distribuíção ao longo da execução                 |
-| 32   | 04    | Fast Tracking                                 | Antecipação de tarefas sem comprometer cronograma |
-|      |       |                                               |                                                   |
+| AULA | SEÇÃO | CONTEÚDO                                      | OBSERVAÇÕES                                                  |
+| ---- | ----- | --------------------------------------------- | ------------------------------------------------------------ |
+| 05   | 01    | Configurações do projeto.                     |                                                              |
+| 06   | 02    | Configurações Escala de tempo, coluna, grade. |                                                              |
+| 08   | 02    | Configurações Calendário.                     | Recesso(folga), Feriados, meio expediente.                   |
+| 09   | 02    | Identificar Entregas(WBS), Listar Atividades. | Formulação da Estrutura analítica do projeto                 |
+| 12   | 03    | Configuração de caledário padrão              | Arquivo ~> Opções ~> Cronograma                              |
+| 13   | 03    | Tipos de Relacionamentos                      |                                                              |
+| 16   | 03    | Restrição x Data limite                       | inTask ~> Avançado                                           |
+| 18   | 03    | Tarefas Periódicas                            | Tarefa ~> Tarefa ~> Periódica                                |
+| 23   | 04    | Fórmula de trabalho                           |                                                              |
+| 24   | 04    | Tipos de Tarefas                              | Duração fixa x trabalho fixo x unidades fixas                |
+| 25   | 04    | Adição de recursos nas tarefas                | Tarefa ~> Display ~> Uso da Tarefa                           |
+| 27   | 04    | Contorno de Trabalho                          | Distribuíção ao longo da execução                            |
+| 32   | 04    | Fast Tracking                                 | Antecipação de tarefas sem comprometer cronograma            |
+| 34   | 04    | Salvar Linha de base                          | Projeto ~> Definir linha de base                             |
+| 35   | 04    | Referência Hammock                            | CTRL C+V especial para seguir parâmetro de referência        |
+| 37   | 05    | Criação de Tabela Personalizada               | Modos de exibição da tabela criada                           |
+| 38   | 05    | Data Status                                   | Data da medição do cronograma                                |
+| 39   | 05    | Configuração de Aba de comandos               | Reagendar trabalho / `Sempre atualizar custo após conclusão` |
+| 41   | 05    | Fórmula das Analise de valor agregado         |                                                              |
+|      |       |                                               |                                                              |
 
 ### 📋 Notes
 
@@ -109,59 +115,81 @@
 
   <hr>
 
+- SEÇÃO 5, AULA 37 - Tabela e exibição personalizada
+
+  - Nome da Tabela: **Análise de Valor Agregado (EVM - Earned Value Management)**
+
+  | Nº  | Nome do Campo         | Nome Sugerido na Planilha                 |
+  | --- | --------------------- | ----------------------------------------- |
+  | 1   | Id                    |                                           |
+  | 2   | Nome                  | Nome da Tarefa                            |
+  | 3   | COTA:                 | Valor Plan. (BCWS)                        |
+  | 4   | Trabalho Real         |                                           |
+  | 5   | Trabalho restante     | Trab. Rest.                               |
+  | 6   | % Concluída           | % Concl.                                  |
+  | 7   | % Física concluída    | % Física                                  |
+  | 8   | COTE                  | Valor Agreg. (BCWP)                       |
+  | 9   | Custo Real            | Custo Real (ACWP)                         |
+  | 10  | IDC                   | Índice de Desempenho de Custo (CPI)       |
+  | 11  | IDA                   | Índice de Desempenho de Prazo (SPI)       |
+  | 12  | IDAC                  | Índice de Desempenho para Terminar (TCPI) |
+  | 13  | EAT: Est. Final (EAC) | Estimativa ao Término (EAC)               |
+
+  <hr>
+
+- SEÇÃO 5, AULA 39 - Configuração de Aba de comandos
+
+  - Arquivo ~> Opções ~> Personalizar Faixa de Opções ~> Em 'Tarefas' criar novo grupo 'Outros', adicionar: `Reagendar trabalho`
+  <hr>
+
+- SEÇÃO 5, AULA 41 - Fórmulas Análise de Valor Agregado
+
+  - BCWS – Budgeted Cost of Work Scheduled (Custo Planejado do Trabalho Agendado)
+  - BCWP – Budgeted Cost of Work Performed (Custo Planejado do Trabalho Realizado)
+  - ACWP – Actual Cost of Work Performed (Custo Real do Trabalho Realizado)
+
+  - Indicadores **CPI** (Índice de desempenho de custo) e **SPI** (Índice de desempenho de prazo).
+    - `CPI = Valor Agregado(BCWP) ÷ Custo Atual(ACWP)` - Mostra se o projeto está **dentro do orçamento**
+    - `SPI = Valor Agregado(BCWP) ÷ Valor Planejado(BCWS)` - Mostra se o projeto está **adiantado ou atrasado**
+    - `ETC = Valor Planejado Total(BAC) - Valor Agregado(BCWP)` - Estimativa do quanto falta para **entregar o projeto**
+    - `EAC = Custo Atual(ACWP) +  Estimativa para Completar(ETC) ÷ Índice de desempenho de custo(CPI)` - Estimativa de como **irá terminar o projeto**
+    <!-- O que foi gasto + (O que falta agregar ÷ índice de desempenhho de custo) -->
+    - `TCPI = Estimativa para completar(ETC) ÷ (Valor Planejado Total(BAC) - Custo Atual(ACWP))` - Projeção de como **irá terminar o projeto**
+
 ## 🎉 Extras
 
-[] Recurso do tipo custo
+### Indicadores para análise de valor agregado.
 
-[] Custo de orçamento
+#### 📌 **1. BCWS – Budgeted Cost of Work Scheduled (Custo Planejado do Trabalho Agendado)**
 
-[] Custo de trabalho
+🔹 **Valor Planejado (PV – Planned Value)** ~> É o custo planejado para o trabalho que **deveria ter sido concluído** até uma determinada data.
 
-[] Contorno de trabalho
+🔹 **Exemplo:** Se até hoje o projeto deveria ter gasto R\$ 10.000 (segundo o cronograma), então o BCWS = R\$ 10.000.
 
-[] Recurso de material
+#### 📌 **2. BCWP – Budgeted Cost of Work Performed (Custo Planejado do Trabalho Realizado)**
 
-[] Gráfico de recurso
+🔹 **Valor Agregado (EV – Earned Value)** ~> É o custo planejado para o trabalho que **foi realmente concluído** até o momento.
 
-```markdown
-**Projeto Vídeo Institucional V1.0**
+🔹 **Exemplo:** Se você já concluiu 50% de um trabalho orçado em R\$ 20.000, então o BCWP = R\$ 10.000.
 
-- **Etapa 1 - Criação**
-  - Fazer Brainstorming de Criação: 4h
-  - Criar Roteiro: 10d
-  - Criar Storyboard: 3d
-- **Etapa 2 - Planejamento**
-  - Selecionar Casting: 5d
-  - Selecionar Locações de Filmagem: 10d
-  - Definir Equipamentos de Filmagem: 1d
-  - Definir Equipe de Filmagem: 1d
-  - Definir Equipamentos de Áudio: 1d
-  - Definir Equipe de Áudio: 1d
-  - Definir Equipamentos de Iluminação: 1d
-  - Definir Equipe de Iluminação: 1d
-  - Planejar Produção e Operação: 2,5d
-  - Planejar Montagem de Cenários: 2d
-  - Planejar Figurino: 1d
-  - Planejar Deslocamento das Equipes: 0,5d
-  - Definir Cronograma de Filmagem: 2d
-  - Definir Cronograma de Edição: 2d
-  - Criar Orçamento e Planejamento Financeiro: 2d
-- **Etapa 3 - Execução**
-  - Contratações dos Serviços e Equipes: 2d
-  - Realizar Ajustes no Local: 1d
-  - Montar Cenário: 1d
-  - Montar Equipamentos de Filmagem: 4h
-  - Montar Equipamentos de Áudio: 4h
-  - Montar Equipamentos de Iluminação: 4h
-  - Testar Equipamentos: 4h
-  - Realizar Ensaios: 1d
-  - Realizar Filmagem: 1d
-  - Desmontar Local: 0,5d
-  - Limpar Local: 0,5d
-- **Etapa 4 - Pós Produção**
-  - Decupar Material: 1d
-  - Editar Vídeo: 3d
-  - Inserir Efeitos Especiais: 5d
-  - Realizar Tratamento e Correções: 2d
-  - Renderizar: 4h
-```
+### 📌 **3. ACWP – Actual Cost of Work Performed (Custo Real do Trabalho Realizado)**
+
+🔹 **Custo Real (AC – Actual Cost)** ~> É o **custo real** gasto para realizar o trabalho até o momento.
+
+🔹 **Exemplo:** Se você gastou R\$ 12.000 para concluir aquele mesmo trabalho de R\$ 10.000, o ACWP = R\$ 12.000.
+
+#### 📊 Exemplo numérico
+
+| Indicador | Valor                                    |
+| --------- | ---------------------------------------- |
+| **BCWS**  | R\$ 15.000 _(o que deveria estar feito)_ |
+| **BCWP**  | R\$ 12.000 _(o que foi realmente feito)_ |
+| **ACWP**  | R\$ 13.500 _(o que foi realmente gasto)_ |
+
+(Exibir ~> [Fórmulas](#fórmulas))
+
+**Análises:**
+
+- Projeto **atrasado**, pois BCWP < BCWS
+- Projeto **acima do orçamento**, pois ACWP > BCWP
+<hr>
