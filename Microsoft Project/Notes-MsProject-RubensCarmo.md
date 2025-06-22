@@ -123,7 +123,7 @@
   | --- | --------------------- | ----------------------------------------- |
   | 1   | Id                    |                                           |
   | 2   | Nome                  | Nome da Tarefa                            |
-  | 3   | COTA:                 | Valor Plan. (BCWS)                        |
+  | 3   | COTA                 | Valor Plan. (BCWS)                        |
   | 4   | Trabalho Real         |                                           |
   | 5   | Trabalho restante     | Trab. Rest.                               |
   | 6   | % Concluída           | % Concl.                                  |
