@@ -65,25 +65,30 @@
 | 34   | 04    | Salvar Linha de base                          | Projeto ~> Definir linha de base                             |
 | 35   | 04    | Referência Hammock                            | CTRL C+V especial para seguir parâmetro de referência        |
 | 37   | 05    | Criação de Tabela Personalizada               | Modos de exibição da tabela criada                           |
-| 38   | 05    | Data Status                                   | Data da medição do cronograma                                |
-| 39   | 05    | Configuração de Aba de comandos               | Reagendar trabalho / `Sempre atualizar custo após conclusão` |
-| 41   | 05    | Fórmula das Analise de valor agregado         |                                                              |
+| 38   | 06    | Data Status                                   | Data da medição do cronograma                                |
+| 39   | 06    | Configuração de Aba de comandos               | Reagendar trabalho / `Sempre atualizar custo após conclusão` |
+| 41   | 06    | Fórmula das Analise de valor agregado         |                                                              |
 |      |       |                                               |                                                              |
 
 ### 📋 Notes
 
+#### SEÇÃO 1
+
+#### SEÇÃO 2
 - SEÇÃO 2, AULA 03 - Project ~> Alterar Periodo de trabalho
 <hr>
 
 - SEÇÃO 2, AULA 06 - Configuração da Escala de Tempo
 <hr>
 
+#### SEÇÃO 3
 - SEÇÃO 3, AULA 04 - Tipos de Relacionamentos
 
   - TI - TÉRMINO A INÍCIO / II - INÍCIO A INÍCIO
   - TT - TÉRMINO A TÉRMINO / IT - INÍCIO A TÉRMINO (Encerra após inicio da sucessora )
   <hr>
 
+#### SEÇÃO 4
 - SEÇÃO 4, AULA 23 - TRABALHO = DURAÇÃO X UNIDADE X HR/DIA
 <hr>
 
@@ -115,6 +120,7 @@
 
   <hr>
 
+#### SEÇÃO 5
 - SEÇÃO 5, AULA 37 - Tabela e exibição personalizada
 
   - Nome da Tabela: **Análise de Valor Agregado (EVM - Earned Value Management)**
@@ -137,12 +143,13 @@
 
   <hr>
 
-- SEÇÃO 5, AULA 39 - Configuração de Aba de comandos
+#### SEÇÃO 6
+- SEÇÃO 6, AULA 39 - Configuração de Aba de comandos
 
   - Arquivo ~> Opções ~> Personalizar Faixa de Opções ~> Em 'Tarefas' criar novo grupo 'Outros', adicionar: `Reagendar trabalho`
   <hr>
 
-- SEÇÃO 5, AULA 41 - Fórmulas Análise de Valor Agregado
+- SEÇÃO 6, AULA 41 - Fórmulas Análise de Valor Agregado
 
   - BCWS – Budgeted Cost of Work Scheduled (Custo Planejado do Trabalho Agendado)
   - BCWP – Budgeted Cost of Work Performed (Custo Planejado do Trabalho Realizado)
